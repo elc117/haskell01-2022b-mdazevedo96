@@ -6,3 +6,6 @@ circleArea x = (x^2) * pi
 
 age :: Int -> Int -> Int
 age y = 2023 - y
+
+isElderly :: Int -> Bool
+isElderly x = x > 65
