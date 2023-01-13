@@ -19,8 +19,8 @@ startsWithA x = head x == 'A'
 isVerb :: String -> Bool
 isVerb x = last x == 'r'
 
---isVowel :: Char -> Bool
---isVowel x = x /= 'a' 'e' 'i' 'o' 'u'
+isVowel :: Char -> Bool
+isVowel x = elem x "aeiou"
 
 --hasEqHeads :: [Int] -> [Int] -> Bool 
 --hasEqHeads x y = head x ==  head y
