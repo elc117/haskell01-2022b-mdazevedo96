@@ -23,4 +23,11 @@ onlyBetween60and80 x = filter (between60and80) x
 between60and80 :: Int -> Bool
 between60and80 x = if x > 60 &&  x < 80 then True else False
 
+calcAreas :: [Float] -> [Float]
+calcAreas x = map (circleArea) x
+
+circleArea :: Float -> Float
+circleArea x = (x ^ 2) * pi
+
+
 
