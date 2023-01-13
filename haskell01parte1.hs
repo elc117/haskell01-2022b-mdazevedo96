@@ -12,3 +12,6 @@ isElderly x = x > 65
 
 htmlItem :: String -> String
 htmlItem x = "<li>" ++ x ++ "<li>"
+
+startsWithA :: String -> Bool
+startsWithA x = head x == 'A'
