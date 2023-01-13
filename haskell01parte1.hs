@@ -9,3 +9,6 @@ age x y = x - y
 
 isElderly :: Int -> Bool
 isElderly x = x > 65
+
+htmlItem :: String -> String
+htmlItem x = "<li>" ++ x ++ "<li>"
