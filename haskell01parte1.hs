@@ -15,3 +15,6 @@ htmlItem x = "<li>" ++ x ++ "<li>"
 
 startsWithA :: String -> Bool
 startsWithA x = head x == 'A'
+
+isVerb :: String -> Bool
+isVerb x = last x == 'r'
