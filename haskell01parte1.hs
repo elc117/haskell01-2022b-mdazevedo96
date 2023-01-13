@@ -21,3 +21,6 @@ isVerb x = last x == 'r'
 
 --isVowel :: Char -> Bool
 --isVowel x = x /= 'a' 'e' 'i' 'o' 'u'
+
+--hasEqHeads :: [Int] -> [Int] -> Bool 
+--hasEqHeads x y = head x ==  head y
