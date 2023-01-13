@@ -18,3 +18,6 @@ startsWithA x = head x == 'A'
 
 isVerb :: String -> Bool
 isVerb x = last x == 'r'
+
+--isVowel :: Char -> Bool
+--isVowel x = x /= 'a' 'e' 'i' 'o' 'u'
