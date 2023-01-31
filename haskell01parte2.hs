@@ -10,6 +10,11 @@ onlyElderly x = filter (isElderly) x
 isElderly :: Int -> Bool
 isElderly x = x > 65
 
+isLongWord :: String -> Bool
+isLongWord a = length a > 10
+
+onlyLongWords :: [String] -> [String]
+onlyLongWords p = filter isLongWord p
 
 onlyEven :: [Int] -> [Int]
 onlyEven x  = filter (isEven) x
@@ -28,6 +33,13 @@ calcAreas x = map (circleArea) x
 
 circleArea :: Float -> Float
 circleArea x = (x ^ 2) * pi
+
+espaco :: Char -> Bool
+espaco c = c == ' '
+
+countSpaces :: String -> Int
+countSpaces cs = length (filter espaco cs)
+
 
 
 
