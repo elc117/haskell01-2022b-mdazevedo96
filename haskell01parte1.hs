@@ -11,7 +11,7 @@ isElderly :: Int -> Bool
 isElderly x = x > 65
 
 htmlItem :: String -> String
-htmlItem x = "<li>" ++ x ++ "<li>"
+htmlItem x = "<li>" ++ x ++ "</li>"
 
 startsWithA :: String -> Bool
 startsWithA x = head x == 'A'
@@ -20,7 +20,10 @@ isVerb :: String -> Bool
 isVerb x = last x == 'r'
 
 isVowel :: Char -> Bool
-isVowel x = elem x "aeiou"
+isVowel c = c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'
 
---hasEqHeads :: [Int] -> [Int] -> Bool 
---hasEqHeads x y = head x ==  head y
+isVowel2 :: Char -> Bool
+isVowel2 c = elem c "aeiou" || elem c "AEIOU"
+
+hasEqHeads :: [Int] -> [Int] -> Bool 
+hasEqHeads x y = head x ==  head y
